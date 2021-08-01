@@ -1,0 +1,168 @@
+//GRID
+
+.contenedorPagina {
+    display: grid;
+    grid-template-areas: "header"
+                         "galeria"
+                         "newsletter"
+                         "redes"
+                         "servicios"
+                         "footer";
+    grid-template-columns: 1fr;
+}
+
+//CAROUSEL
+
+#galeria {
+    grid-area: galeria;
+    box-sizing: border-box;
+}
+
+.botonCarousel_verMas {
+    padding: 1% 2%;
+    border: 1px solid #313140;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5%;
+    margin-bottom: 1%;
+    background-color: #F2F2F2;
+
+    &:hover {
+        background-color: $violeta-fuerte;
+        transition: .3s;
+    }
+}
+
+.botonCarousel_verMas_enlace {
+    text-decoration: none;
+    color: #333;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $violeta-fuerte;
+}
+
+// NEWSLETTER
+
+#newsletter {
+    grid-area: newsletter;
+    padding: $espacio-secciones;
+    box-sizing: border-box;
+}
+
+.contenedorFormulario {
+    @include displayrow;
+    align-items: center; 
+}
+
+.contenedorInput {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+
+.contenedorInput_input {
+    flex: 1;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: $border2;
+    padding: 2%;
+    border-radius: 5px;
+
+    &:hover {
+        border-color: white;
+    }
+}
+
+.botonEnviar {
+    input {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        padding: 1.5%;
+        border-radius: 5px;
+        width: 25%;
+
+        &:hover {
+            border: solid 2px white;
+            background-color: $violeta;
+            color: black;
+            width: 30%;
+            font-size: 1.2rem;
+            transition: .5s;
+        }
+    }
+}
+
+// REDES
+
+#redes {
+    grid-area: redes;
+    padding: $espacio-secciones;
+    background-color: $violeta;
+    box-sizing: border-box;
+
+    div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        a {
+            color: black;
+            font-size: 1.6rem;
+            width: 30%;
+            margin-left: 35%;
+            margin-bottom: 2%;
+            padding-top: 1%;
+
+            &:hover {
+                border-color: white;
+                border-radius: 5px;
+                background-color: black;
+                color: $violeta-fuerte;
+            }
+        }
+    }
+}
+
+// SERVICIOS
+
+#servicios {
+    grid-area: servicios;
+    padding: $espacio-secciones;
+    box-sizing: border-box;
+}
+
+.contenedorServicios {
+    @include displayrow;
+    align-items: center;
+    padding: 2%;
+
+    div span{
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+}
+
+// FOOTER
+
+footer {
+    grid-area: footer;
+    padding: $espacio-secciones;
+    border-top: $border2;
+    background-image: linear-gradient(to right, $violeta, white);
+    box-sizing: border-box;
+
+    span a {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.856);
+        font-style: oblique;
+
+        &:hover {
+            color: $violeta-fuerte;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+$espacio-secciones: 2%;
+$espacio-titulo: 2%;
+$violeta: #c071ee65;
+$violeta-fuerte: #9533ce;
+$negro-claro: rgba(0, 0, 0, 0.335);
+$borde1: 1px solid black;
+$border2: 2px solid black;
+
+@mixin displayrow {
+    display: flex;
+    flex-flow: row nowrap;
+}

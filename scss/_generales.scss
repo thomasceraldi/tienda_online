@@ -1,0 +1,67 @@
+// snippet reseteo
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: none;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+// body
+
+body {
+    margin: 0, auto;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #000;
+    background: #c071eea6;
+    display: block;
+    animation-name: efectoBody;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.4,.09,.57,.86);
+    animation-duration: 1s;
+}
+
+@keyframes efectoBody {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html, body {
+    height: 100vh;
+}
+
+// h
+
+h1, h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.349);
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding: $espacio-titulo;
+}
+
+h3 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+// a
+
+a {
+    vertical-align: middle;
+    text-decoration: none;
+}

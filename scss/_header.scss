@@ -1,0 +1,53 @@
+//header
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 9000;
+    background-image: linear-gradient(to right, $violeta, rgb(255, 255, 255) 60%);
+    box-sizing: border-box;
+
+    .contenedorHeader {
+        @include displayrow;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            transform: translateX(-30%);
+            font-size: 1rem + 1rem;
+        }
+
+        nav {
+            width: 100%;
+
+            ul {
+                @include displayrow;
+                list-style: none;
+                margin-bottom: 0;
+    
+                li {
+                    padding: 3%;
+                    border-right: $borde1;
+
+                    &:last-of-type {
+                        border-right: 0;
+                    }
+
+                    &:hover {
+                        background-color: $negro-claro;
+                    }
+
+                    a {
+                        font-size: 1.2rem;
+                        color: black;
+
+                        &:hover {
+                            color: $violeta-fuerte;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
