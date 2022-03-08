@@ -79,22 +79,26 @@
 }
 
 .botonEnviar {
-    input {
-        cursor: pointer;
+    button {
         background-color: black;
         color: white;
+        border: solid 1px beige;
         padding: 1.5%;
         border-radius: 5px;
         width: 25%;
 
         &:hover {
-            border: solid 2px white;
+            border: solid 1px white;
             background-color: $violeta;
             color: black;
-            width: 30%;
-            font-size: 1.2rem;
-            transition: .5s;
         }
+    }
+}
+
+#mensajeFormularioNewsletter {
+    p {
+        margin-top: 3.5%;
+        margin-bottom: 0;
     }
 }
 

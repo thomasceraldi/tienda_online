@@ -1,0 +1,70 @@
+.tituloTienda {
+    margin: 3%;
+}
+
+#productosTienda {
+    display: grid;
+    grid-template-areas: "producto1 producto2"
+                         "producto3 producto4"
+                         "producto5 producto6" 
+                         "producto7 prouducto7";
+    justify-items: center;
+
+    #producto1 {
+        grid-area: producto1;
+    }
+
+    #producto2 {
+        grid-area: producto2;
+    }
+
+    #producto3 {
+        grid-area: producto3;
+    }
+
+    #producto4 {
+        grid-area: producto4;
+    }
+
+    #producto5 {
+        grid-area: producto5;
+    }
+
+    #producto6 {
+        grid-area: producto6;
+    }
+
+    #producto7 {
+        grid-area: producto7;
+    }
+}
+
+.card {
+    border: 2px solid black /*rgb(87 58 181 / 72%)*/;
+    margin-bottom: 2%;
+    box-shadow: 1px 1px #ff00cb4a;
+}
+
+.card-body {
+    border-top: 2px solid #00000082;
+    background-color: #b393c5b8;
+}
+
+.detalleProducto {
+    color: #5d5454;
+}
+
+.precioProducto {
+    font-size: 1.5rem;
+}
+
+.botonProducto {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px black;
+    background-color: #4d5cb4;
+    border-color: #715284;
+}
+
+.bi-cart4 {
+    margin-right: 4%;
+}
